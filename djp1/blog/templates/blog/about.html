@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="about-section" style="padding-top: 50px;" >
+    <h1 style="font-size: 36px; color: #ffffff; text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;">About Us</h1>
+
+    <p style="color:aqua">Welcome to our website! We provide a platform for the public to post their queries and ask their questions. Doctors and other users can engage by providing answers and remedies. Additionally, our platform offers valuable information on precautions for current flus and pandemics.</p>
+    <p style="color:aqua">If someone is in need of blood, they can post about it, making it visible to all users. Users can react and connect to provide blood if they have a matching blood group. Similarly, those in need of organs can post their requirements, allowing users to connect and offer support if organs are available.</p>
+</div>
+
+<!-- Embedding video with autoplay -->
+<div class="video-container">
+    <video autoplay muted loop width="400" height="450">
+        <source src="{% static 'blog/video.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+{% endblock content %}
